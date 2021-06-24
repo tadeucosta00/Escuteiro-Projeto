@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itemAdd"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Adicionar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/itemEdit"
+        android:icon="@drawable/edit_icon_png_3585"
+        android:iconTint="@color/white"
+        android:title="Editar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/itemVerPresenca"
+        android:icon="@mipmap/ic_check_foreground"
+        android:title="Ver Presenças"
+        app:showAsAction="ifRoom" />
+    </menu>

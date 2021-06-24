@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/capturar"
+    tools:context=".Login">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="7000dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <TextView
+                style="@style/viewParent.headerText.NoMode"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="40dp"
+                android:text="Bem-Vindo \nde novo!" />
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="122dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="25dp"
+                android:src="@mipmap/ic_logo_foreground" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Email"
+            android:textColor="#2196F3"
+            />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:background="@drawable/plaintextrendonda"
+            android:inputType="textEmailAddress"
+            android:layout_width="320dp"
+            android:paddingLeft="10dp"
+            android:layout_height="52dp"
+            android:maxLines="1" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Password"
+            android:layout_marginTop="20dp"
+            android:textColor="#2196F3"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_width="320dp"
+            android:paddingLeft="10dp"
+            android:layout_height="52dp"
+            android:background="@drawable/plaintextrendonda"
+            android:maxLines="1" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lembrar-me"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@+id/password"
+            />
+
+        <Button
+
+            android:id="@+id/login"
+            android:layout_width="294dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/botoesredondos"
+            android:enabled="true"
+            android:textSize="20dp"
+            android:text="Entrar"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#2196F3" />
+
+        <Button
+            style="@style/parent"
+            android:id="@+id/criarconta"
+            android:layout_marginTop="30dp"
+            android:text="Novo Utilizador? Regista-te ja!"
+            android:textAlignment="center"
+            android:textColor="#2196F3"
+            android:textSize="14dp"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"
+            app:backgroundTint="#00FFFFFF" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

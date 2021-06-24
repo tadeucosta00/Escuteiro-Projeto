@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/capturar"
+    tools:context=".criarConta">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Registar \nnova Conta!" />
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="122dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@mipmap/ic_logo_foreground" />
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#2196F3"
+                android:text="Nome" />
+
+            <EditText
+                android:id="@+id/editnome"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                style="@style/modifiedEditText"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:paddingBottom="20dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#2196F3"
+                android:text="Email" />
+
+            <EditText
+
+                android:id="@+id/email"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                style="@style/modifiedEditText"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="20dp">
+
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#2196F3"
+                android:text="Password" />
+
+            <EditText
+
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                style="@style/modifiedEditText"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:paddingBottom="20dp" />
+
+
+            <Button
+                android:id="@+id/verPassword"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="-48dp"
+                android:background="@mipmap/ic_olho_foreground"
+                app:backgroundTint="#000000" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#2196F3"
+                android:text="NIN" />
+
+            <EditText
+
+                android:id="@+id/nin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="11dp"
+                style="@style/modifiedEditText"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="10dp"
+                android:inputType="number"
+                android:paddingBottom="20dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#2196F3"
+                android:layout_marginTop="30dp"
+                android:text="Morada" />
+
+            <EditText
+
+                android:id="@+id/morada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="10dp"
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:paddingBottom="20dp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#2196F3"
+                android:text="Género" />
+
+            <Spinner
+                android:id="@+id/genero"
+                android:layout_width="369dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:paddingBottom="20dp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#2196F3"
+                android:layout_marginTop="30dp"
+                android:text="Nascimento" />
+
+            <DatePicker
+            android:id="@+id/date_PickerInicial"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="11dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"/>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#2196F3"
+                android:layout_marginTop="30dp"
+                android:text="Contacto" />
+
+            <EditText
+
+                android:id="@+id/contacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginRight="20dp"
+                style="@style/modifiedEditText"
+                android:drawablePadding="10dp"
+                android:inputType="text|phone"
+                android:paddingBottom="20dp" />
+
+
+            <Button
+
+                android:id="@+id/editar_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/botoesredondos"
+                android:enabled="true"
+                android:text="Criar Conta"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="51dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

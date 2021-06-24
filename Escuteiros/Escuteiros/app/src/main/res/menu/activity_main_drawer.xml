@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Verperfil"
+            android:icon="@mipmap/ic_perfil_foreground"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_chatgeral_foreground"
+            android:title="Chat Geral" />
+        <item
+            android:id="@+id/nav_atividades"
+            android:icon="@mipmap/ic_atividade_foreground"
+            android:title="Atividades" />
+        <item
+            android:id="@+id/nav_calendario"
+            android:icon="@mipmap/ic_calendario_foreground"
+            android:title="Calendário" />
+        <item
+            android:id="@+id/nav_item"
+            android:icon="@mipmap/ic_itens_foreground"
+            android:title="Itens" />
+        <item
+            android:id="@+id/nav_catalgo"
+            android:icon="@mipmap/ic_catalogo_foreground"
+            android:title="Catálogo" />
+        <item
+            android:id="@+id/nav_inventario"
+            android:icon="@drawable/ic_backpack"
+            android:title="Inventario" />
+        <item
+            android:id="@+id/nav_utilizadores"
+            android:icon="@mipmap/ic_utilizadores_foreground"
+            android:title="Utilizadores"
+            />
+        <item
+            android:id="@+id/nav_estatisticas"
+            android:icon="@mipmap/ic_estatisticas_foreground"
+            android:title="Estatisticas"
+            />
+
+    </group>
+</menu>

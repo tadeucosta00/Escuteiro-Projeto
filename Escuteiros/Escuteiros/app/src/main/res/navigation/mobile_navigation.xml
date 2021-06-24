@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.escuteiros.ui.home.HomeFragment"
+        android:label="Chat Geral"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_atividades"
+        android:name="com.example.escuteiros.ui.atividades.AtividadesFragment"
+        android:label="Atividades"
+        tools:layout="@layout/atividades_fragment" >
+        <action
+            android:id="@+id/action_nav_atividades_to_nav_atividades_adicionar"
+            app:destination="@id/nav_atividades_adicionar" />
+        <action
+            android:id="@+id/action_nav_atividades_to_nav_atividades_ver"
+            app:destination="@id/nav_atividades_ver"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_atividades_adicionar"
+        android:name="com.example.escuteiros.ui.atividades.AdicionarAtividadesFragment"
+        android:label="Adicionar Atividades"
+        tools:layout="@layout/adicionar_atividades_fragment" />
+    <fragment
+        android:id="@+id/nav_atividades_ver"
+        android:name="com.example.escuteiros.ui.atividades.VerAtividadeFragment"
+        android:label="Ver Atividade"
+        tools:layout="@layout/ver_atividade_fragment">
+        <argument
+        android:name="atividade"
+        app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_catalgo"
+        android:name="com.example.escuteiros.ui.catalgo.CatalgoFragment"
+        android:label="Catálogo"
+        tools:layout="@layout/catalgo_fragment" >
+        <action
+            android:id="@+id/action_nav_catalgo_to_nav_VerCatalogo"
+            app:destination="@id/nav_VerCatalogo" />
+        <action
+            android:id="@+id/action_nav_catalgo_to_nav_adicionarCatalogo"
+            app:destination="@id/nav_adicionarCatalogo" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_calendario"
+        android:name="com.example.escuteiros.ui.calendario.CalendarioFragment"
+        android:label="Calendario"
+        tools:layout="@layout/calendario_fragment" />
+    <fragment
+        android:id="@+id/nav_adicionarCatalogo"
+        android:name="com.example.escuteiros.ui.catalgo.AdicionarCatalogoFragment"
+        android:label="Adicionar Catalogo"
+        tools:layout="@layout/adicionar_catalogo_fragment" />
+    <fragment
+        android:id="@+id/nav_VerCatalogo"
+        android:name="com.example.escuteiros.ui.catalgo.VerInstruncoesFragment"
+        android:label="Ver Catalogo"
+        tools:layout="@layout/ver_instruncoes_fragment">
+        <argument
+        android:name="catalogo"
+        app:argType="string" />
+        <action
+            android:id="@+id/action_nav_VerCatalogo_to_nav_editarCatalogo"
+            app:destination="@id/nav_editarCatalogo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_editarCatalogo"
+        android:name="com.example.escuteiros.ui.catalgo.EditarCatalogoFragment"
+        android:label="Editar Catalogo"
+        tools:layout="@layout/editar_catalogo_fragment" />
+
+
+    <fragment
+        android:id="@+id/nav_estatisticas"
+        android:name="com.example.escuteiros.ui.estatisticas.EstatisticasFragment"
+        android:label="Estatisticas"
+        tools:layout="@layout/estatisticas_fragment" />
+
+
+    <fragment
+        android:id="@+id/nav_inventario"
+        android:name="com.example.escuteiros.ui.inventario.InventarioFragment"
+        android:label="Inventario"
+        tools:layout="@layout/inventario_fragment" >
+        <action
+            android:id="@+id/action_nav_inventario_to_nav_inventarioAdicionar"
+            app:destination="@id/nav_inventarioAdicionar" />
+        <action
+            android:id="@+id/action_nav_inventario_to_nav_inventarioAdicionarItem"
+            app:destination="@id/nav_inventarioAdicionarItem" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_inventarioAdicionar"
+        android:name="com.example.escuteiros.ui.inventario.AdicionarInventarioFragment"
+        android:label="Criar Inventario"
+        tools:layout="@layout/adicionar_inventario_fragment" />
+    <fragment
+        android:id="@+id/nav_inventarioAdicionarItem"
+        android:name="com.example.escuteiros.ui.inventario.AdicionarItemInventarioFragment"
+        android:label="Adicionar Item"
+        tools:layout="@layout/adicionar_item_inventario_fragment">
+        <argument
+            android:name="inventarios"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_item"
+        android:name="com.example.escuteiros.ui.item.ItemFragment"
+        android:label="Item"
+        tools:layout="@layout/item_fragment" >
+        <action
+            android:id="@+id/action_nav_item_to_nav_item_adicionar"
+            app:destination="@id/nav_item_adicionar" />
+        <action
+            android:id="@+id/action_nav_item_to_nav_item_editar"
+            app:destination="@id/nav_item_editar" />
+    </fragment>
+
+    
+
+    <fragment
+        android:id="@+id/nav_item_adicionar"
+        android:name="com.example.escuteiros.ui.item.AdicionarItemFragment"
+        android:label="Adicionar Item"
+        tools:layout="@layout/adicionar_item_fragment" />
+
+    <fragment
+        android:id="@+id/nav_item_editar"
+        android:name="com.example.escuteiros.ui.item.EditarItemFragment"
+        android:label="Editar Item"
+        tools:layout="@layout/editar_item_fragment" >
+    <argument
+        android:name="itens"
+        app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_utilizadores"
+        android:name="com.example.escuteiros.ui.utilizadores.UtilizadoresFragment"
+        android:label="Utilizadores"
+        tools:layout="@layout/utilizadores_fragment">
+        <action
+            android:id="@+id/action_nav_utilizadores_to_nav_adicionarUtilizadores"
+            app:destination="@id/nav_adicionarUtilizadores" />
+        <action
+            android:id="@+id/action_nav_utilizadores_to_nav_editar"
+            app:destination="@id/nav_editar" />
+    </fragment>
+    <fragment
+            android:id="@+id/nav_editar"
+            android:name="com.example.escuteiros.ui.utilizadores.EditarFragment"
+            android:label="Editar"
+            tools:layout="@layout/editar_fragment" >
+            <argument
+                android:name="utilizadores"
+                app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_Verperfil"
+        android:name="com.example.escuteiros.ui.Perfil.VerPerfilFragment"
+        android:label="Perfil"
+        tools:layout="@layout/ver_perfil_fragment" >
+        <action
+            android:id="@+id/action_nav_Verperfil_to_nav_Editarperfil"
+            app:destination="@id/nav_Editarperfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Editarperfil"
+        android:name="com.example.escuteiros.ui.Perfil.EditarPerfilFragment"
+        android:label="Editar Perfil"
+        tools:layout="@layout/editar_perfil_fragment" >
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_adicionarUtilizadores"
+        android:name="com.example.escuteiros.ui.utilizadores.AdicionarUtilizadoresFragment"
+        android:label="Adicionar Utilizadores"
+        tools:layout="@layout/adicionar_utilizadores_fragment" />
+
+
+
+</navigation>
